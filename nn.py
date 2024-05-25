@@ -15,5 +15,5 @@ model.add(Dense(8,input_dim = 8,activation = "relu" )) #input layer
 model.add(Dense(8,activation = "relu")) #hidden layer
 model.add(Dense(1,activation = "sigmoid")) #output layer
 model.compile(loss="binary_crossentropy",optimizer = "adam", metrics = ["accuracy"])
-model.fit(input,output,epochs=10)
+model.fit(input,output,epochs=1000)
 accuracy = model.evaluate(x_test,y_test)
